@@ -1,4 +1,3 @@
-
 # Homebrew
 
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
@@ -17,3 +16,5 @@ sudo cp fr-dvorak-bepo.bundle /Library/Keyboard\ Layouts/fr-dvorak-bepo.bundle
 
 # or that:
 # defaults write com.apple.HIToolbox AppleSelectedInputSources ({InputSourceKind = "Keyboard Layout";"KeyboardLayout ID" = 1111;"KeyboardLayout Name" = "French - numerical"}); killall SystemUIServer;
+
+# add http://furbo.org/2013/11/02/a-quick-look-plug-in-for-provisioning/
