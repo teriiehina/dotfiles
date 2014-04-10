@@ -16,10 +16,16 @@ install ssh-copy-id
 install imagemagick	
 install ghostscript	
 
-install appledoc	
 install cloc		
 install fontforge	
 install tmux
-install xctool
+
+cask install alfred
+
+cask install skype
+cask install firefox
+cask install cyberduck
+
+cask alfred link
 
 cleanup
