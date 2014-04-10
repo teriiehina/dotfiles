@@ -21,11 +21,12 @@ install fontforge
 install tmux
 
 cask install alfred
-
 cask install skype
 cask install firefox
 cask install cyberduck
-
+cask install iterm2
+cask install adium
+cask install textmate
 cask alfred link
 
 cleanup
