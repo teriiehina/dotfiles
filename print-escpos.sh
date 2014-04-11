@@ -11,3 +11,4 @@ sudo pip install pyusb==1.0.0b1
 sudo pip install pyserial
 sudo pip install SOAPpy
 sudo pip install suds
+sudo pip install simplejson
