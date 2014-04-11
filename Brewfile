@@ -28,6 +28,7 @@ cask install iterm2
 cask install adium
 cask install textmate
 cask install crashlytics
+cask install caffeine
 
 cask alfred link
 
