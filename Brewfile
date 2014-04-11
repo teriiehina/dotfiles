@@ -27,6 +27,8 @@ cask install cyberduck
 cask install iterm2
 cask install adium
 cask install textmate
+cask install crashlytics
+
 cask alfred link
 
 cleanup
