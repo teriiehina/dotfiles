@@ -7,6 +7,14 @@ brew bundle Brewfile
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
+# we assume that this is a brand new mac you are running
+# thus none of theses files' destinations should exist.
+
+mv gitconfig ~/.gitconfig
+mv tmux.conf ~/.tmux.conf
+mv lldbinit  ~/.lldbinit
+mv zshenv    ~/.zshenv
+
 
 # Install the bépo keyboard layout
 
