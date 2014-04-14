@@ -1,4 +1,3 @@
-
 [user]
 	name = Peter Meuel
 	email = pmeuel.externe@pagesjaunes.fr
@@ -23,8 +22,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[http]
-	proxy = http://pmeuel:Pitapita1@cerberus.pj.fr:8080
 [color]
 	ui = true
 [commit]
