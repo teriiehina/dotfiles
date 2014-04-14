@@ -32,3 +32,4 @@ sudo cp fr-dvorak-bepo.bundle /Library/Keyboard\ Layouts/fr-dvorak-bepo.bundle
 #   - install solarized for iTerm2 and Xcode
 #   - change CapsLock to Ctrl
 #   - give Spotlight's keyboard shortcut (Cmd-Space) to Alfred
+#   - add `tmux attach -t base || tmux new -s base` to iTerm2
