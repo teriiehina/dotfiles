@@ -20,6 +20,9 @@ install cloc
 install fontforge	
 install tmux
 
+tap phinze/cask
+install brew-cask
+
 cask install alfred
 cask install skype
 cask install firefox
