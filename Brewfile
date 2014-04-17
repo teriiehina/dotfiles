@@ -24,14 +24,15 @@ tap phinze/cask
 install brew-cask
 
 cask install alfred
-cask install skype
-cask install firefox
-cask install cyberduck
-cask install iterm2
 cask install adium
-cask install textmate
-cask install crashlytics
 cask install caffeine
+cask install colloquy
+cask install crashlytics
+cask install cyberduck
+cask install firefox
+cask install iterm2
+cask install skype
+cask install textmate
 
 cask alfred link
 
