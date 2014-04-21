@@ -36,4 +36,16 @@ cask install textmate
 
 cask alfred link
 
+cask install qlcolorcode
+cask install qlstephen
+cask install qlmarkdown
+cask install quicklook-json
+cask install qlprettypatch
+cask install quicklook-csv
+cask install betterzipql
+cask install webp-quicklook
+cask install suspicious-package
+cask install ipaql
+
+
 cleanup
