@@ -18,7 +18,7 @@ mv zshenv    ~/.zshenv
 
 # Install the bépo keyboard layout
 
-sudo cp fr-dvorak-bepo.bundle /Library/Keyboard\ Layouts/fr-dvorak-bepo.bundle
+sudo cp -R fr-dvorak-bepo.bundle /Library/Keyboard\ Layouts/fr-dvorak-bepo.bundle
 
 # this is supposed to change the keyboard layout but I can't make it work
 # defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -string com.apple.keyboardlayout.fr-dvorak-bepo.keylayout.FrenchDvorak; killall SystemUIServer;
