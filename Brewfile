@@ -20,6 +20,7 @@ install cloc
 install fontforge	
 install tmux
 install tree
+install graphviz
 
 tap phinze/cask
 install brew-cask
