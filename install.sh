@@ -41,6 +41,9 @@ defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -stri
 
 # add http://furbo.org/2013/11/02/a-quick-look-plug-in-for-provisioning/
 
+# enable copy in quicklook
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+
 # TODO
 #   - install solarized for iTerm2 and Xcode
 #   - change CapsLock to Ctrl
