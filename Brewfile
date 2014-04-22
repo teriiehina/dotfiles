@@ -1,8 +1,8 @@
 update
 upgrade
 
+install emacs
 install git
-install mercurial
 
 install ruby
 install rbenv
@@ -19,6 +19,7 @@ install ghostscript
 install cloc		
 install fontforge	
 install tmux
+install tree
 
 tap phinze/cask
 install brew-cask
