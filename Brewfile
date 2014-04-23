@@ -4,9 +4,9 @@ upgrade
 install emacs
 install git
 
-install ruby
 install rbenv
 install ruby-build
+install rbenv-gem-rehash
 
 install android-sdk
 install openssl
