@@ -31,9 +31,7 @@ rbenv global 2.1.1
 
 gem install bundler
 
-brew install rbenv-default-gems
-echo "bundler\n" >> "~/.rbenv/default-gems"
-
+echo "bundler\n" >> ~/.rbenv/default-gems
 echo 'gem: --no-document' >> ~/.gemrc
 
 # Chisel is used by lldbinit, so let's clone it
