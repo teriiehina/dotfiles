@@ -7,6 +7,8 @@ install git
 install rbenv
 install ruby-build
 install rbenv-gem-rehash
+install rbenv-default-gems
+
 
 install android-sdk
 install openssl
