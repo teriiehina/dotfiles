@@ -17,6 +17,25 @@ git config --global user.name "Peter MEUEL"
 git config --global user.email peter@teriiehina.net
 git config --global core.editor emacs
 
+# Ruby
+# this is from http://www.createdbypete.com/articles/ruby-on-rails-development-setup-for-mac-osx/
+
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+
+# if any problem installing ruby with rbenv with "readline" in the error log, consider:
+# RUBY_CONFIGURE_OPTS=--with-readline-dir="/usr/lib/libreadline.so" rbenv install 2.1.1
+rbenv install 2.1.1
+rbenv rehash
+rbenv global 2.1.1
+
+gem install bundler
+
+brew install rbenv-default-gems
+echo "bundler\n" >> "~/.rbenv/default-gems"
+
+echo 'gem: --no-document' >> ~/.gemrc
+
 # Chisel is used by lldbinit, so let's clone it
 mkdir -p ~/Programmes/osx/
 git clone https://github.com/facebook/chisel.git ~/Programmes/osx/chisel
@@ -24,10 +43,10 @@ git clone https://github.com/facebook/chisel.git ~/Programmes/osx/chisel
 # we assume that this is a brand new mac you are running
 # thus none of theses files' destinations should exist.
 
-mv gitconfig ~/.gitconfig
-mv tmux.conf ~/.tmux.conf
-mv lldbinit  ~/.lldbinit
-mv zshenv    ~/.zshenv
+cat gitconfig >> ~/.gitconfig
+cat tmux.conf >> ~/.tmux.conf
+cat lldbinit >> ~/.lldbinit
+cat zshenv >>  ~/.zshenv
 
 # Install the bépo keyboard layout
 
