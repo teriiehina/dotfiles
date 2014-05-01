@@ -51,6 +51,6 @@ cask install webp-quicklook
 cask install suspicious-package
 cask install ipaql
 cask install charles
-
+cask install mactex
 
 cleanup
