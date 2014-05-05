@@ -11,7 +11,7 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 
 curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
 
-# Config Git
+# Git
 
 git config --global user.name "Peter MEUEL"
 git config --global user.email peter@teriiehina.net
@@ -34,12 +34,12 @@ gem install bundler
 echo "bundler\n" >> ~/.rbenv/default-gems
 echo 'gem: --no-document' >> ~/.gemrc
 
-# Chisel is used by lldbinit, so let's clone it
+# Chisel is referenced in the .lldbinit config file, so let's clone it
 mkdir -p ~/Programmes/osx/
 git clone https://github.com/facebook/chisel.git ~/Programmes/osx/chisel
 
-# we assume that this is a brand new mac you are running
-# thus none of theses files' destinations should exist.
+# Me: Config files.
+# Other me: thank you Captain Obvious
 
 cat gitconfig >> ~/.gitconfig
 cat tmux.conf >> ~/.tmux.conf
@@ -51,15 +51,22 @@ cat zshenv >>  ~/.zshenv
 sudo cp -R fr-dvorak-bepo.bundle /Library/Keyboard\ Layouts/fr-dvorak-bepo.bundle
 
 # this is supposed to change the keyboard layout but I can't make it work
-defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -string com.apple.keyboardlayout.fr-dvorak-bepo.keylayout.FrenchDvorak; killall SystemUIServer;
+defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -string com.apple.keyboardlayout.fr-dvorak-bepo.keylayout.FrenchDvorak
 
 # or that:
 # defaults write com.apple.HIToolbox AppleSelectedInputSources ({InputSourceKind = "Keyboard Layout";"KeyboardLayout ID" = 1111;"KeyboardLayout Name" = "French - numerical"}); killall SystemUIServer;
 
-# add http://furbo.org/2013/11/02/a-quick-look-plug-in-for-provisioning/
 
 # enable copy in quicklook
-defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+
+# /me doesn't like having shadows around the window screenshot (aka CMD-Shift-4-Space)
+defaults write com.apple.screencapture disable-shadow -bool true
+
+
+# let's make our changes take effect
+killall Finder
+killall SystemUIServer
 
 # TODO
 #   - install solarized for iTerm2 and Xcode
