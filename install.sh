@@ -3,6 +3,11 @@
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 brew bundle Brewfile
 
+# we need to launch Alfred 2 once so that brew-cask can link to it
+open ~/Applications/Alfred\ 2.app
+brew cask alfred link
+
+
 # Oh-my-zsh
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
