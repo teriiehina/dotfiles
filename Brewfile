@@ -38,8 +38,6 @@ cask install iterm2
 cask install skype
 cask install textmate
 
-cask alfred link
-
 cask install qlcolorcode
 cask install qlstephen
 cask install qlmarkdown
@@ -52,5 +50,8 @@ cask install suspicious-package
 cask install ipaql
 cask install charles
 cask install mactex
+
+cask install linein
+cask soundflower
 
 cleanup
