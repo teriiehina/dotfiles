@@ -53,6 +53,6 @@ cask install xquartz
 cask install wireshark
 
 cask install linein
-cask soundflower
+cask install soundflower
 
 cleanup
