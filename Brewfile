@@ -3,6 +3,7 @@ upgrade
 
 install emacs
 install git
+install mutt
 
 install rbenv
 install ruby-build

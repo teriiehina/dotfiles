@@ -50,6 +50,7 @@ cat gitconfig >> ~/.gitconfig
 cat tmux.conf >> ~/.tmux.conf
 cat lldbinit >> ~/.lldbinit
 cat zshenv >>  ~/.zshenv
+cat muttrc >> ~/.muttrc
 
 # Install the bépo keyboard layout
 
