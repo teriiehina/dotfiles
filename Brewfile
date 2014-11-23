@@ -19,6 +19,7 @@ install ssh-copy-id
 install imagemagick	
 install ghostscript	
 
+install aspell --with-lang-fr
 install cloc		
 install fontforge	
 install tmux
