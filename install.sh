@@ -47,6 +47,7 @@ git clone https://github.com/facebook/chisel.git ~/Programmes/osx/chisel
 # Other me: thank you Captain Obvious
 
 cat gitconfig >> ~/.gitconfig
+cat gitignore_glabal >> ~/.gitignore_global
 cat tmux.conf >> ~/.tmux.conf
 cat lldbinit >> ~/.lldbinit
 cat zshenv >>  ~/.zshenv
